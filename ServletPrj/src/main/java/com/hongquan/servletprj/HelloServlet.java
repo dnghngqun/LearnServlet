@@ -7,7 +7,7 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 //annotation tạo đường dẫn mà không cần cấu hình trong xml
 @WebServlet(name = "helloServlet", urlPatterns = {"/hello-servlet", "/xin-chao"})
-public class HelloServlet {
+public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
